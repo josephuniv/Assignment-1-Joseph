@@ -1,0 +1,180 @@
+<!--
+// -------------------------------------------------------
+// Assignment (1)
+// Written by: (Joseph Jananji 2195417)
+// For "Front-End Web Programming"”" Section 05807– Winter 2022
+// --------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Jananji - Gallery</title>
+  <link rel="icon" href="icon.jpg" type="image/x-jpg">
+  <style>
+    body {
+      background-color: #869DC7;
+      color: white;
+      font-family: Verdana, Arial, sans-serif;
+      max-width: 1600px;
+      min-width: 800px;
+      margin: 0;
+    }
+    /* Confugre header with background at the top of the page */
+    header {
+      background-color: #3d5c8b;
+      color: rgb(254, 254, 255);      
+      font-size: 5em;
+      padding: 20px;
+      text-align: center;
+      background-image: url(comp.jpg);
+      text-shadow: 5px 5px 5px black;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 10%;
+    }
+
+    main {
+      color: rgb(254, 254, 255);
+      text-shadow: 3px 3px 5px black;
+      padding-left: 15%;
+    }
+
+    nav {
+      background-color: #5f87c2;
+      padding-left: 2em;
+      padding-top: 0.25em;
+      padding-bottom: 0.5em;
+      padding-right: 1em;
+      font-size: large;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:link {
+      color: rgb(254, 254, 255);
+    }
+
+    a:visited {
+      color: rgb(254, 254, 255);
+    }
+
+    a:focus {
+      color: rgb(254, 254, 255);
+    }
+
+    a:hover {
+      color: #112044;
+    }
+
+    a:active {
+      color: #FF0000;
+    }
+    /* I uesd the gallery class to configure the pictures */
+    #gallery {
+      position: relative;
+    }
+
+    #gallery ul {
+      list-style-type: none;
+      width: 300px;
+    }
+
+    #gallery li {
+      display: inline;
+      float: left;
+      padding: 10px;
+    }
+
+    #gallery img {
+      border-style: none;
+    }
+
+    #gallery a {
+      text-decoration: none;
+      font-style: italic;
+      color: #eaeaea;
+    }
+
+    #gallery span {
+      position: absolute;
+      left: -1000px;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    #gallery a:hover span {
+      position: absolute;
+      top: 16px;
+      left: 320px;
+      text-align: center;
+      opacity: 1;
+    }
+
+    figure {
+      position: absolute;
+      left: 280px;
+      text-align: center;
+      opacity: .25;
+    }
+
+    footer {
+      font-size: small;
+      text-align: center;
+      font-style: italic;
+    }
+    /* To make the shadow of the current page bigger for contrast */
+    a #c {
+      text-shadow: 4px 4px 5px black;
+    }
+    /* To configure the pictures with shadow and round border*/
+    img {
+      box-shadow: 5px 5px 10px black;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    Joseph Jananji
+  </header>
+  <nav>
+    <a href="index.html">Home</a> &nbsp;
+    <a href="study.html">Study</a> &nbsp;
+    <a href="hobbies.html">Hobbies</a> &nbsp;
+    <!-- I used id current to make the shadow of the current page link bigger for contrast  -->
+    <a href="gallery.html"><span id="current"><b>Gallery</b></span></a> &nbsp;
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h1>Sports Gallery</h1>
+    <div id="gallery">
+      <figure>
+        <img src="football.jpg" width="400" height="300" alt="football">
+      </figure>
+      <ul>
+        <li><a href="football.jpg"><img src="sfootball.jpg" width="100" height="75" alt="Football">
+            <span><img src="football.jpg" width="400" height="300" alt="Football"><br>Football.</span></a>
+        </li>
+        <li><a href="basketball.jpg"><img src="sbasketball.jpg" width="100" height="75" alt="Basketball">
+            <span><img src="basketball.jpg" width="400" height="300" alt="Basketball"><br>Basketball</span></a>
+        </li>
+        <li><a href="tennis.jpg"><img src="stennis.jpg" width="100" height="75" alt="Tennis">
+            <span><img src="tennis.jpg" width="400" height="300" alt="Tennis"><br>Tennis</span></a>
+        </li>
+        <li><a href="cycling.jpg"><img src="cycling.jpg" width="100" height="75" alt="Cycling">
+            <span><img src="cycling.jpg" width="400" height="300" alt="Cycling"><br>Cycling</span></a>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

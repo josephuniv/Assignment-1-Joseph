@@ -1,0 +1,52 @@
+<!--
+// -------------------------------------------------------
+// Assignment (1)
+// Written by: (Joseph Jananji 2195417)
+// For "Front-End Web Programming"”" Section 05807– Winter 2022
+// --------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Jananji - Contact</title>
+    <link href="joseph.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        Joseph Jananji
+    </header>
+    <nav>
+        <a href="index.html">Home</a> &nbsp;
+        <a href="study.html">Study</a> &nbsp;
+        <a href="hobbies.html">Hobbies</a> &nbsp;
+        <a href="gallery.html">Gallery</a> &nbsp; 
+        <!-- I used id current to make the shadow of the current page link bigger for contrast  -->       
+        <a href="contact.html"><span id="current"><b>Contact</b></span></a>
+    </nav>
+    <main>
+        <br><br><br>
+        <form>
+            <label for="fname">* First Name </label> <input type="text" name="fname" id="fname" required="true">
+            <br><br>
+            <label for="lname">* Last Name </label> <input type="text" name="lname" id="lname" required="true"> <br><br>
+            <label for="email">* E-mail </label><input type="email" name="email" id="email" required="true"><br><br>
+            <label for="phone">Phone </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                type="text" name="phone" id="phone"> <br><br>
+            <label for="comment">* Comment: </label><textarea rows="2" cols="20" name="comment" id="comment"
+                required="true"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        Copyright &copy; 2020 Path of Light Yoga Studio<br>
+        <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+    </footer>
+</body>
+
+</html>

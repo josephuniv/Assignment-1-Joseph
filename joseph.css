@@ -1,0 +1,158 @@
+/* -------------------------------------------------------
+// Assignment (1)
+// Written by: (Joseph Jananji 2195417)
+// For "Front-End Web Programming"”" Section 05807– Winter 2022
+// -------------------------------------------------------- */
+
+body {
+    background-color: #869DC7;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    max-width: 1600px;
+    min-width: 800px;
+    margin: 0;
+}
+
+/* Confugre header with background at the top of the pages */
+header {
+    background-color: #3d5c8b;
+    color: rgb(254, 254, 255);
+    font-size: 5em;
+    padding: 20px;
+    text-align: center;
+    background-image: url(comp.jpg);
+    text-shadow: 5px 5px 5px black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 10%;
+}
+
+nav {
+    background-color: #5f87c2;
+    padding-left: 2em;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    font-size: large;
+    text-shadow: 2px 2px 5px black;
+}
+
+main {
+    color: rgb(254, 254, 255);
+    text-shadow: 3px 3px 5px black;
+    padding-left: 15%;
+}
+
+/* To configre the quote with different color and size */
+.quote {
+    font-size: xx-large;
+    color: rgb(250, 212, 89);
+}
+
+/* To use it when I need text without decoration for long text like in study.html */
+.normaltext {
+    color: #061029;
+    text-shadow: none;
+}
+
+/* To use it when I need link without decoration for long text like in study.html */
+.normaltext a:visited {
+    color: #061029;
+}
+
+/* Also for link without  decoration */
+.normaltext a:link {
+    color: #06290f;
+}
+
+footer {
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    clear: both;
+}
+
+footer a:visited {
+    color: #061029;
+}
+
+footer a:link {
+    color: #061029;
+}
+
+/* To configure the pictures */
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% 10% 5%;
+}
+
+/* To configure the pictures with shadow and round border*/
+img {
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(254, 254, 255);
+}
+
+a:visited {
+    color: rgb(254, 254, 255);
+}
+
+a:focus {
+    color: rgb(254, 254, 255);
+}
+
+a:hover {
+    color: #112044;
+}
+
+a:active {
+    color: #FF0000;
+}
+
+ul {
+    font-size: large;
+    list-style-type: square;
+}
+
+dl {
+    color: #112044;
+}
+
+/* To make the shadow of the current page link bigger for contrast */
+a #currentpage {
+    text-shadow: 4px 4px 5px black;
+}
+
+/* To configure the form in contact.html */
+input[type="text"] {
+    width: 500px;
+    margin-left: 21px;
+}
+
+input[type="email"] {
+    width: 500px;
+    margin-left: 56px;
+}
+
+input[type="submit"] {
+    margin-left: 125px;
+}
+
+textarea {
+    width: 503px;
+    margin-left: 25px;
+}
+
+label {
+    float: left
+}

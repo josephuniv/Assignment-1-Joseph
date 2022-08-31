@@ -1,0 +1,71 @@
+<!--
+// -------------------------------------------------------
+// Assignment (1)
+// Written by: (Joseph Jananji 2195417)
+// For "Front-End Web Programming"”" Section 05807– Winter 2022
+// --------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Jananji - Home</title>
+    <link href="joseph.css" rel="stylesheet">
+    <link rel="icon" href="icon.jpg" type="image/x-jpg">
+    <style>
+        main {
+            background-image: url(joseph.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            padding-top: 40px;
+            margin-right: 9%;
+        }
+
+        /* To not display the quote when the viewport is small */
+        @media only screen and (max-width: 1200px) {
+            .quote {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Joseph Jananji
+    </header>
+    <nav>
+        <!-- I used id current to make the shadow of the current page link bigger for contrast  -->
+        <a href="index.html"><span id="current"><b>Home</b></span></a> &nbsp;
+        <a href="study.html">Study</a> &nbsp;
+        <a href="hobbies.html">Hobbies</a> &nbsp;
+        <a href="gallery.html">Gallery</a> &nbsp;
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h1><strong>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- I used quote tTo configre the quote with different color and size -->
+                <span class="quote"> I'm Web Desingner</span>
+            </strong></h1>
+        <a href="contact.html" target="_self">
+            <h3>Joseph Jananji</h3>
+        </a> <br>
+        <h1><strong>Study</strong></h1>
+        <a href="https://www.vaniercollege.qc.ca/software-applications-specialist/" target="_blank">
+            <h3>Software development</h3>
+        </a><br>
+        <h1><strong>Collage</strong></h1>
+        <a href="https://www.vaniercollege.qc.ca/" target="_blank">
+            <h3>Vanier collage</h3>
+        </a><br>
+    </main>
+    <footer style="clear:both">
+        Copyright &copy; 2020 Path of Light Yoga Studio<br>
+        <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+    </footer>
+</body>
+
+</html>
